@@ -7,7 +7,7 @@ const logo = require('../../assets/images/logo.png')
 export default function NumberLogin(){
     return(
         <SafeAreaView style={styles.root}>
-            <Arrow link={'/signup' as RelativePathString} />
+            <Arrow link={'/signup' as RelativePathString} color="black" />
             <View style={styles.container}>
                 <Image source={logo} style={styles.logo} />
                 <Text style={styles.loginText}>Login to your Account</Text>

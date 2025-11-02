@@ -8,7 +8,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Signup(){
     return(
         <View style={styles.root}>
-            <Arrow link={'/' as RelativePathString} />
+            <Arrow link={'/' as RelativePathString} color="black" />
             <View style={styles.conatiner}>
                 <Logo />
                 <View style={styles.container2}>
