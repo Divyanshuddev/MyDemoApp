@@ -1,14 +1,14 @@
+import Arrow from "@/components/Common/Arrow";
 import Button from "@/components/Common/Button";
-import Arrow from "@/components/Signup/Arrow";
 import Logo from "@/components/Signup/Logo";
 import SocialMedia from "@/components/Signup/SocialMedia";
-import { RelativePathString } from "expo-router";
+import { Link, RelativePathString } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Signup(){
     return(
         <View style={styles.root}>
-            <Arrow />
+            <Arrow link={'/' as RelativePathString} />
             <View style={styles.conatiner}>
                 <Logo />
                 <View style={styles.container2}>
@@ -16,6 +16,7 @@ export default function Signup(){
                 <SocialMedia />
                 <Text style={styles.OR}>OR</Text>
                 <Button title="Sign in" link={'numberlogin' as RelativePathString} />
+                <Text style={styles.accountText}>Don't have an account <Link href={'/'} style={styles.link}>Sign up</Link></Text>
                 </View>
             </View>
         </View>
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
         gap:1
     },
     text:{
-        fontSize:50,
+        fontSize:30,
         fontWeight:"700",
     },
     container2:{
@@ -47,7 +48,14 @@ const styles = StyleSheet.create({
         width:"100%"
     },
     OR:{
-        fontSize:22,
+        fontSize:15,
         fontWeight:"bold"
+    },
+    link:{
+        color:"#2A66FF",
+        fontWeight:"bold"
+    },
+    accountText:{
+        color:"gray"
     }
 })

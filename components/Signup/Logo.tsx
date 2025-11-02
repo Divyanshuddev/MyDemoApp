@@ -8,8 +8,8 @@ export default function Logo(){
 
 const styles = StyleSheet.create({
     root:{
-        width:300,
-        height:300,
+        width:200,
+        height:200,
     }
 })
 

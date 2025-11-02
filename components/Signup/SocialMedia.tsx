@@ -37,11 +37,11 @@ export default function SocialMedia(){
 
 const styles = StyleSheet.create({
     icon:{
-        width:40,
-        height:40
+        width:20,
+        height:20
     },
     text:{
-        fontSize:17
+        fontSize:14
     },
     stack:{
         display:"flex",
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         gap:20
     },
     google:{
-        width:35,
-        height:35
+        width:15,
+        height:15
     }
 })
