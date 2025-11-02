@@ -36,7 +36,7 @@ export default function ChatScreen(){
                         {
                             chat.map((value,index)=>{
                                 return(
-                                    <View style={value.sender?styles.sender:styles.reciver}>
+                                    <View style={value.sender?styles.sender:styles.reciver} key={index}>
                                         <Text style={value.sender?styles.senderText:styles.reciverText}>{value.message}</Text>
                                         <View style={styles.messageStatusView}>
                                         <FontAwesome6 name="check-double" size={10} color="white" />
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     },
     chatView:{
         flex:1,
-        backgroundColor:"whitesmoke",
+        backgroundColor:"white",
         paddingTop:30,
         paddingLeft:20,
         paddingRight:20,
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
         color:"white"
     },
     sender:{
-        backgroundColor:"#cccccc",
+        backgroundColor:"#e6e6e6",
         padding:15,
         borderTopLeftRadius:22,
         borderTopRightRadius:22,

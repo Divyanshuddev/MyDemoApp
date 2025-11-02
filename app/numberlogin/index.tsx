@@ -48,7 +48,7 @@ const styles= StyleSheet.create({
         borderWidth:1,
         width:"100%",
         borderRadius:10,
-        padding:20,
+        padding:10,
         borderColor:"#2A66FF"
     },
     link:{

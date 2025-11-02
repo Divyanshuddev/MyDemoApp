@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     tabView:{
         position:"absolute",
         bottom:0,
-        width:"85%",
+        width:"100%",
 
     }
 })
